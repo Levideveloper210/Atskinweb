@@ -1,0 +1,3 @@
+import type {Metadata} from "next";import "./globals.css";import {Store} from "@/components/Store";import {Header,Footer,WhatsApp} from "@/components/Shell";
+export const metadata:Metadata={title:{default:"A.T Cosmetics LTD | Beauty & Skincare in Owerri",template:"%s | A.T Cosmetics LTD"},description:"Explore skincare, cosmetics and beauty essentials at A.T Cosmetics LTD in Owerri, Nigeria.",openGraph:{title:"A.T Cosmetics LTD",description:"Beauty and skincare essentials in Owerri.",type:"website"}};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body><Store><Header/><main>{children}</main><Footer/><WhatsApp/></Store></body></html>}
